@@ -4,4 +4,4 @@ COPY packages ./
 RUN npm ci
 COPY src ./
 EXPOSE 3032
-CMD [ "node", "main.js" ]
+ENTRYPOINT [ "node", "main.js" ]
